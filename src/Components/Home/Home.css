@@ -12,6 +12,7 @@
 }
 .cart-container {
   background-color: lavender;
+  padding-right: 50px;
 }
 
 /* responsive small devices  */

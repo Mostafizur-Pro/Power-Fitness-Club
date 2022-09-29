@@ -49,6 +49,7 @@ const Information = (props) => {
                     <p className='gray'>Height </p>
                 </div>
             </div>
+            
             <div className='exercise'>
             <h1>Add A Break</h1>
              <div className='btn-area'>
@@ -74,7 +75,7 @@ const Information = (props) => {
 
 
             <div className='btn-completed'>
-                <button clickHandler={notify} className='btn-activity'>
+                <button onClick={notify} className='btn-activity'>
                     <h2>Activity Completed</h2>
                 </button>
                 <ToastContainer/>
