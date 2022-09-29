@@ -16,7 +16,7 @@
 }
 
 /* responsive small devices  */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
   .home {
     display: grid;
     grid-template-columns: 1fr;
@@ -43,7 +43,7 @@
   }
 }
 /* responsive medium devices  */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .home {
     display: grid;
     grid-template-columns: 1fr;
@@ -60,7 +60,7 @@
   }
 }
 /* responsive large devices  */
-@media only screen and (min-width: 767px) and (max-width: 1400px) {
+@media only screen and (min-width: 992px) {
   .home {
     display: grid;
     grid-template-columns: 3fr 1fr;
