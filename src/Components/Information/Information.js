@@ -44,10 +44,10 @@ const Information = (props) => {
              <div className='exercise'>
             <h1>Exercise Details</h1>
             <div  className='exercise-area1'>
-            <p>Exercise Time:{totalTime} <small>Minutes</small></p>
+            <h4><strong>Exercise Time : </strong> <span className='gray'>{totalTime} <small>Minutes</small></span></h4>
             </div>
             <div className='exercise-area2'>
-                <p>Break Time:  <small>Minutes</small></p>
+                <h4><strong>Break Time : </strong>  <small> Minutes</small></h4>
             </div>
             
         </div>
@@ -56,7 +56,7 @@ const Information = (props) => {
 
             <div className='btn-completed'>
                 <button onClick={notify} className='btn-activity'>
-                    <p>Activity Completed</p>
+                    <h2>Activity Completed</h2>
                 </button>
                 <ToastContainer/>
         </div>

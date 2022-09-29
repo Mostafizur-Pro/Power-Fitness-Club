@@ -1,15 +1,33 @@
-@media only screen and (max-width: 600px) {
+.question-title {
+  border-radius: 10px;
+  padding: 10px 25px;
+  background-color: tomato;
+  color: white;
+}
+.blog {
+  text-align: center;
+  color: tomato;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 380px) {
   .question {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
+    background-color: gainsboro;
+    padding: 0 20px;
+    padding-bottom: 50px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .question {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
+    background-color: gainsboro;
+    padding: 0 30px;
+    padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -17,6 +35,8 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
-    margin-top: 50px;
+    background-color: gainsboro;
+    padding: 0 50px;
+    padding-bottom: 50px;
   }
 }
