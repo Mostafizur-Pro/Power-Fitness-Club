@@ -11,14 +11,14 @@ const Cart = (props) => {
                 <img className='cart-image' src={picture} alt="" />
             </div>
             <div className='cart-info'>
-                <h5>Name: {name}</h5>
-                <p>About: {about.slice(50)}</p>
-                <p>Age: {age}</p>
-                <p>Time spent: {time} min</p>
+                <h2> {name}</h2>
+                <p> {about.slice(0,100)}</p>
+                <p>Age: <strong>{age}</strong> </p>
+                <p>Time spent: <strong>{time} min</strong></p>
               
             </div>
             <button onClick={()=>handdleAddToList(cart)} className='btn-add'>
-                <p>Add To List</p>
+                <h3>Add To List</h3>
                 </button>
             
         </div>

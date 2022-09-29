@@ -1,12 +1,12 @@
 import React from 'react';
-import pic from '../../rrrrrrr.jpg'
+import pic from '../images/profile.jpg'
 import './Information.css'
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Information = (props) => {
-    // const notify = () => toast("Congratulations!!! You have Completed the task!!");
-    //   const notify = () => toast("Congratulations!!! You have Completed the task!!");
+    const notify = () => toast("Congratulations! You have Completed the task.");
+    
     const {newCarts}=props
     let totalTime=0
     for(const newCart of newCarts){
@@ -16,10 +16,10 @@ const Information = (props) => {
     }
     return (
         <div className='info'>
-             <div className='profile-owner'>
-                <img className='profile-pic' src={pic} alt="" />
+             <div className='persona-owner'>
+                <img className='persona-pic' src={pic} alt="" />
                 <div>
-                    <h2>Name: Mostafizur Dahman</h2>
+                    <h2>Mostafizur Dahman</h2>
                     <p>Dhaka, Bangladesh</p>
                 </div>
            </div>
@@ -51,30 +51,15 @@ const Information = (props) => {
             </div>
             
         </div>
-            {/* <div className='exercise'>
-                <h1>Exercise Details</h1>
-                <div  className='exercise-area1'>
-                <p>Exercise Time:{totalTime} <small>Minutes</small></p>
-                </div>
-                <div className='exercise-area2'>
-                    <p>Break Time:  <small>Minutes</small></p>
-                </div>
-                
-            </div>
+           
+
+
             <div className='btn-completed'>
-            <button onClick={notify} className='btn-activity'>
-                <p>Activity Completed</p>
-            </button>
-            <ToastContainer />
-            </div> */}
-
-
-            {/* <div className='btn-completed'>
-        <button onClick={notify} className='btn-activity'>
-            <p>Activity Completed</p>
-        </button>
-        <ToastContainer/>
-        </div> */}
+                <button onClick={notify} className='btn-activity'>
+                    <p>Activity Completed</p>
+                </button>
+                <ToastContainer/>
+        </div>
 
         </div>
             

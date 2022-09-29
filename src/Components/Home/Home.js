@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import './Home.css'
-import photo from '../../image.png'
+import photo from '../images/images.png'
 import Information from '../Information/Information';
 // import fakedata from '../../../public/fakedb.json'
 
@@ -26,7 +26,7 @@ const Home = () => {
             <div className="cart-container">
                <div className='header'>
                <img src={photo} alt="" />
-                <h1 className='name'>Fitness And Strength</h1>
+                <h1 className='name'>Power Fitness Club</h1>
                </div>
                 <h2 className='select'>Select today's Exercise :</h2>
                 <div className='cart-list'>
