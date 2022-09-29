@@ -3,13 +3,14 @@ import Cart from '../Cart/Cart';
 import './Home.css'
 import photo from '../../image.png'
 import Information from '../Information/Information';
+// import fakedata from '../../../public/fakedb.json'
 
 const Home = () => {
     const [carts,setCart]=useState([])
     const [newCart, setNewCart]=useState([])
 
     useEffect(()=>{
-        fetch('fakedata.json')
+        fetch('fakedb.json')
         .then(res=>res.json())
         .then(data=>setCart(data))
     },[])
