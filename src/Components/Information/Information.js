@@ -31,7 +31,7 @@ const Information = (props) => {
              <div className='persona-owner'>
                 <img className='persona-pic' src={pic} alt="" />
                 <div>
-                    <h2>Mostafizur Dahman</h2>
+                    <h2>Mostafizur Rahman</h2>
                     <p>Dhaka, Bangladesh</p>
                 </div>
            </div>

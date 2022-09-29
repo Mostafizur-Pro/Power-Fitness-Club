@@ -20,7 +20,7 @@
   padding-left: 15px;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 576px) {
   .question {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -30,7 +30,7 @@
     padding-bottom: 50px;
   }
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
   .question {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -40,7 +40,7 @@
     padding-bottom: 50px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 767px) and (max-width: 1400px) {
   .question {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
