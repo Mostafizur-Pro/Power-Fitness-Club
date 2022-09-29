@@ -2,7 +2,7 @@ import React from 'react';
 import './Information.css'
 import pic from '../../rrrrrrr.jpg'
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Information = (props) => {
     const notify = () => toast("Congratulations!!! You have Completed the task!!");

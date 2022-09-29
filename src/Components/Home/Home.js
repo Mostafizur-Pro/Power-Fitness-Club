@@ -1,24 +1,24 @@
 import React, { useEffect, useState } from 'react';
-import photo from '../../image.png';
 import Cart from '../Cart/Cart';
+import './Home.css'
+import photo from '../../image.png'
 import Information from '../Information/Information';
 
-
-
 const Home = () => {
-    const [carts, setCart] = useState([])
-    const [newCart, setNewCart] = useState([])
+    const [carts,setCart]=useState([])
+    const [newCart, setNewCart]=useState([])
+
     useEffect(()=>{
-        fetch('fakedb.json')
+        fetch('fakedata.json')
         .then(res=>res.json())
         .then(data=>setCart(data))
     },[])
-
     const handdleAddToList=(cart)=>{
-        const addNewCart=[...newCart, cart]
-        setNewCart(addNewCart)
-    } 
-
+        // console.log(cart)
+        const addNewCart=[...newCart, cart];
+        setNewCart(addNewCart);
+    }
+    // console.log(carts)
     return (
         <div className='home'>
             
@@ -30,13 +30,11 @@ const Home = () => {
                 <h2 className='select'>Select today's Exercise :</h2>
                 <div className='cart-list'>
                 {
-                    carts.map(cart=><Cart
-                    cart={cart} 
+                    carts.map(cart=><Cart 
+                        cart={cart} 
                         KEY={cart._id}
-                        handdleAddToList={handdleAddToList}>
-                        
-                    </Cart>
-                        )  
+                        handdleAddToList={handdleAddToList}
+                        ></Cart>)  
                 }
                 </div>
                 
@@ -45,9 +43,7 @@ const Home = () => {
             <div className="information-container">
                <Information
                newCarts={newCart}
-               >
-
-               </Information>
+               ></Information>
             </div>
         </div>
     );
