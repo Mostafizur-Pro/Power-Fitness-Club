@@ -1,0 +1,24 @@
+@media only screen and (max-width: 600px){
+    .question{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    
+}
+@media only screen and (min-width: 768px){
+    .question{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    
+}
+@media only screen and (min-width: 992px){
+    .question{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+   
+}

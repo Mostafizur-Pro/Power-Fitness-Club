@@ -1,0 +1,35 @@
+.cart{
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    position: relative;
+}
+.cart-image{
+    width: 290px;
+    height: 180px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;  
+}
+.cart-info{
+    margin-left: 10px;
+}
+.btn-add{
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  background-color:blueviolet;
+  color: white;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+}
+.btn-add:hover{
+    background-color: blue;
+    color: white;
+}
